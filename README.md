@@ -5,7 +5,8 @@ Ruoyu Feng, Yixin Gao, Xin Jin, Runsen Feng, Zhibo Chen
 
 <a href='https://arxiv.org/abs/2305.02586'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-![pipeline](content/intro.png)
+<img src=figs/motivation.png width=60% />
+
  
 ## Citation
 ```
