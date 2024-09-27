@@ -7,8 +7,11 @@ Ruoyu Feng, Yixin Gao, Xin Jin, Runsen Feng, Zhibo Chen
 
 <img src=figs/motivation.png width=60% />
 
- 
+# R-D Curve of GIT-SSIC
+<img src=figs/Kodak_recon_full.png width=60% />
+
 ## Citation
+If you find this work useful for your research, please cite:
 ```
 @inproceedings{feng2023semantically,
   title={Semantically structured image compression via irregular group-based decoupling},
