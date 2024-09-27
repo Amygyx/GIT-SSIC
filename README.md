@@ -1,5 +1,5 @@
-# GIT-SSIC
-Semantically Structured Image Compression via Irregular Group-Based Decoupling
+# Introduction
+Official Pytorch implementation for Semantically Structured Image Compression via Irregular Group-Based Decoupling, ICCV2023
 
 Ruoyu Feng, Yixin Gao, Xin Jin, Runsen Feng, Zhibo Chen
 
