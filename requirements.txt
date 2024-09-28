@@ -1,0 +1,7 @@
+einops
+torchac
+opencv-python
+scipy
+timm
+thop
+numpy==1.26.4
