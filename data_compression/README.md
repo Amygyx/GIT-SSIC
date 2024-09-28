@@ -1,7 +1,6 @@
 # compression
 
-A utility library for data compression in PyTorch
-Developed by University of Science and Technology of China (USTC), [Intelligent Media Computing Lab](https://faculty.ustc.edu.cn/chenzhibo).
+A utility library for data compression in PyTorch developed by University of Science and Technology of China (USTC), [Intelligent Media Computing Lab](https://faculty.ustc.edu.cn/chenzhibo).
 
 ## Installation
 
