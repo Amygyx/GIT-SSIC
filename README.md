@@ -20,7 +20,7 @@ pip install -e .
 Download our pretrained models from [Google Drive](https://drive.google.com/drive/folders/1hmZYSdVnjyPzAx5OYaoudOpSkz3EylYG?usp=sharing) 
 
 # Inference
-## For with semantic sturctured bitstream
+## For with semantic structured bitstream
 ```bash
   export CUDA_VISIBLE_DEVICES="0"
   python -u compress_multiple_images.py \
@@ -34,7 +34,7 @@ Download our pretrained models from [Google Drive](https://drive.google.com/driv
   --groups_tobe_decode 0 1 2 3 
 ```
 
-## For without semantic sturctured bitstream
+## For without semantic structured bitstream
 ```bash
   export CUDA_VISIBLE_DEVICES="0"
   python -u compress_multiple_images.py \
