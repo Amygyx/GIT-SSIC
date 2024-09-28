@@ -14,8 +14,7 @@ install_requires = [
     "easydict",
     "dotty-dict",
     "lmdb",
-    "pytorch-msssim",
-    'pybind11'
+    "pytorch-msssim"
 ]
 
 def get_extensions():
