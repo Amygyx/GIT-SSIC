@@ -292,7 +292,7 @@ def compress(args):
 def main(argv):
     parser = argparse.ArgumentParser(description="")
     parser.add_argument(
-        "command", choices=["compress", "decompress"])
+        "command", choices=["compress"])
     args = parser.parse_args(argv[:1])
 
     if args.command == "compress":
