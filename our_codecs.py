@@ -280,7 +280,15 @@ class GroupChARTTC(GroupTransformerBasedTransformCodingHyper):
 
         x_hat = self.g_s(y_hat, msk)
 
-        return x_hat, bits, side_bits
+        # self.forward_return_dict = True
+        if self.forward_return_dict:
+            return {
+                "x_hat": x_hat,
+                "bits": {"y": bits, "z": side_bits},
+                'log_probs': log_probs
+            }
+        else:
+            return x_hat, bits, side_bits
     def compress(self, x, group_mask, reconstruct=False):
         """Compresses an image tensor."""
         y = self.g_a(x, group_mask)

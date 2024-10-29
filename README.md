@@ -10,14 +10,28 @@ Ruoyu Feng*, Yixin Gao*, Xin Jin, Runsen Feng, Zhibo Chen
 # Environment
 ```bash
 conda create --name git_ssic python==3.9
-pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+conda activate git_ssic
+# pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html  # seems to cause bug when training group-swin
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 python -m pip install -r requirements.txt
-cd GIT-SSIC/data_compression
+cd data_compression
 pip install -e .
+cd ..
 ```
 
 # Pretrained models
 Download our pretrained models from [Google Drive](https://drive.google.com/drive/folders/1hmZYSdVnjyPzAx5OYaoudOpSkz3EylYG?usp=sharing) 
+
+# Training
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py \
+    --model ours_groupswin_channelar --hyper-channels 192 192 192 \
+    --lmbda 8192 --lr 5e-5 \
+    --train-set /home/t2vg-a100-G4-10/project/qyp/datasets/COCO/train2017 \
+    --eval-set /home/t2vg-a100-G4-10/mnt/guangtingsc_fengry/dataset/CompressionData/kodak \
+    --groupvit-load-group-msk figs/kodak/group_msk \
+    --total-iteration 2000000 --multistep-milestones 1600000 --eval-interval 10
+```
 
 # Inference
 ## For with semantic structured bitstream

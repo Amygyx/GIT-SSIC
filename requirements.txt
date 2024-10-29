@@ -5,3 +5,6 @@ scipy
 timm
 thop
 numpy==1.26.4
+pycocotools
+ninja
+lmdb

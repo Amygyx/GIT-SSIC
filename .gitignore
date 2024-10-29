@@ -1,0 +1,4 @@
+logs
+*.pyc
+data_compression/data_compression.egg-info/
+*.so
